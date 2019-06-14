@@ -1,6 +1,5 @@
 create database student_examination_sys;
 
-drop table if exists student;
 
 create table student(
 	id VARCHAR(1000) PRIMARY KEY not null,
@@ -8,7 +7,6 @@ create table student(
 	age int,sex CHAR(2) 
 );
 
-drop table if exists subject;
 
 create table subject(
 	id VARCHAR(1000) PRIMARY KEY not null,
@@ -17,7 +15,6 @@ create table subject(
 	description VARCHAR(2000) 
 );
 
-drop table if exists score;
 
 create table score(
   id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
